@@ -1,0 +1,5 @@
+SELECT COUNT(Name)
+FROM country;
+
+SELECT COUNT(DISTINCT CountryCode)
+FROM city;
