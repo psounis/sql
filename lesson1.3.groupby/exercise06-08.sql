@@ -3,6 +3,7 @@ SELECT city, count(*) AS customers
 FROM customers
 WHERE country = 'USA'
 GROUP BY city
+HAVING customers>=2
 ORDER BY customers DESC;
 
 -- exercise07
