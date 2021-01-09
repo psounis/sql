@@ -1,0 +1,5 @@
+SELECT TIME_FORMAT('23:01:15', 'mins: %i, secs: %s');
+SELECT TIME_FORMAT('23:01:15', '%h.%i.%s%p');
+SELECT DATE_FORMAT('2021-01-09', '%a, %d %M %Y');
+SELECT DATE_FORMAT('2021-01-09', '%D %b %y');
+SELECT DATE_FORMAT('2021-01-09 11:14:21', '%r');
