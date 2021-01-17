@@ -1,13 +1,13 @@
 USE sakila;
 
 DELETE FROM film_actor
-WHERE actor_id = 201;
+WHERE actor_id = 202;
 
 DELETE FROM actor
-WHERE actor_id = 201;
+WHERE actor_id = 202;
 
 DELETE FROM film
-WHERE film_id = 1001;
+WHERE film_id = 1002;
 
 DROP TABLE copy_actor;
 DROP TABLE copy_film_actor;
