@@ -19,4 +19,4 @@ FROM payments p JOIN customers c
 	ON p.customerNumber = c.customerNumber
 WHERE c.country IN ('France', 'USA')
 GROUP BY p.customerNumber
-ORDER BY total_amount DESC
+ORDER BY creditLimit DESC
