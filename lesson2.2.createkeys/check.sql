@@ -11,7 +11,7 @@ CREATE TABLE employees (
     hire_date	DATE		NOT NULL,
  	CONSTRAINT emp_pk PRIMARY KEY (emp_no),
     CONSTRAINT date_constraint CHECK (birth_date<hire_date),
-    CONSTRAINT last_name CHECK (LENGTH(first_name)>4)
+    CONSTRAINT last_name CHECK (LENGTH(last_name)>4)
 );
 
 INSERT INTO `emp`.`employees`
@@ -24,9 +24,9 @@ SELECT * FROM employees;
 INSERT INTO `emp`.`employees`
 (`birth_date`,`first_name`,`last_name`,`gender`,`hire_date`)
 VALUES
-('2020-01-01', 'John', 'Wick', 'M', '2014-01-01');
+('2020-01-01', 'John', 'Wickrrr', 'M', '2014-01-01');
 
 INSERT INTO `emp`.`employees`
 (`birth_date`,`first_name`,`last_name`,`gender`,`hire_date`)
 VALUES
-('1900-01-01', 'John', 'Wick', 'M', '2014-01-01');
+('1900-01-01', 'John', 'Wickrrr', 'M', '2014-01-01');
