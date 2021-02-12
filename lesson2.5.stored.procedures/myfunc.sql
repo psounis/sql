@@ -1,0 +1,18 @@
+DROP FUNCTION IF EXISTS myfunc;
+
+DELIMITER $$
+CREATE FUNCTION myfunc(n INT) 
+RETURNS INT 
+NO SQL
+BEGIN
+	DECLARE i INT DEFAULT 1;
+    DECLARE fact INT DEFAULT 1;
+    WHILE i<=N DO
+		SET fact = fact*i;
+        SET i=i+1;
+    END WHILE;
+    RETURN fact; 
+END$$
+DELIMITER ;
+
+SELECT myfunc(5); 

@@ -1,0 +1,12 @@
+DROP PROCEDURE IF EXISTS variable;
+
+DELIMITER $$
+CREATE PROCEDURE variable() 
+BEGIN
+	DECLARE x INT; 
+	SET x=1;
+    SELECT x;
+END$$
+DELIMITER ;
+
+CALL variable();
