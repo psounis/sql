@@ -9,7 +9,7 @@ CREATE TABLE employees (
     last_name	VARCHAR(50)	NOT NULL,
     gender		ENUM('M','F') NOT NULL DEFAULT 'M',
     hire_date	DATE		NOT NULL,
-    full_name   VARCHAR(80) AS (CONCAT(first_name,' ',last_name)),
+    full_name   VARCHAR(81) AS (CONCAT(first_name,' ',last_name)),
  	CONSTRAINT emp_pk PRIMARY KEY (emp_no)
 );
 
